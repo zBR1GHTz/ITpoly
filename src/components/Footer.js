@@ -1,19 +1,16 @@
 import React from 'react';
+import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white text-center py-4">
+    <footer className="footer">
       <div className="container">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา - สาขาเทคโนโลยีสารสนเทศ
-        </p>
-        <p className="text-sm">
-          เบอร์โทรศัพท์: 012-345-6789 | อีเมล: info@lanna-polytechnic.ac.th
-        </p>
-        <p className="text-sm mt-2">
-          <a href="#" className="text-blue-400 hover:text-blue-300 transition duration-300">Facebook</a> |
-          <a href="#" className="text-blue-400 hover:text-blue-300 ml-2 transition duration-300">Twitter</a>
-        </p>
+        <p className="footer-text">&copy; 2024 IT Department, วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนาเชียงใหม่</p>
+        <div className="footer-links">
+          <a href="#" className="footer-link">Facebook</a>
+          <a href="#" className="footer-link">Twitter</a>
+          <a href="#" className="footer-link">LinkedIn</a>
+        </div>
       </div>
     </footer>
   );

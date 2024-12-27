@@ -1,26 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   return (
-    <nav className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-lg font-semibold text-blue-500 hover:text-blue-700">
-          IT Department
-        </Link>
-        <ul className="flex space-x-4">
-          <li>
-            <Link to="/" className="text-gray-700 hover:text-blue-500 transition duration-300">Home</Link>
-          </li>
-          <li>
-            <Link to="/about" className="text-gray-700 hover:text-blue-500 transition duration-300">About Us</Link>
-          </li>
-          <li>
-            <Link to="/courses" className="text-gray-700 hover:text-blue-500 transition duration-300">Courses</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-500 transition duration-300">Contact Us</Link>
-          </li>
+    <nav className="navbar">
+      <div className="container">
+        <div className="navbar-brand">IT Dept</div>
+        <ul className="navbar-nav">
+          <li><a href="/" className="nav-item">Home</a></li>
+          <li><a href="/about" className="nav-item">About Us</a></li>
+          <li><a href="/courses" className="nav-item">Courses</a></li>
+          <li><a href="/contact" className="nav-item">Contact Us</a></li>
         </ul>
       </div>
     </nav>
