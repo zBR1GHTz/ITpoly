@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import images1 from "/ITpoly/src/images/1.jpg";
 
 function Home() {
   return (
@@ -11,6 +12,16 @@ function Home() {
           สำรวจหลักสูตร กิจกรรม และสิ่งอำนวยความสะดวกต่างๆ ที่ถูกออกแบบมาเพื่อช่วยให้คุณประสบความสำเร็จในสายงานเทคโนโลยีสารสนเทศ
         </p>
 
+        {/* การเพิ่มรูปภาพในหน้า Home */}
+        <div className="flex justify-center mb-10">
+          <img
+            src={images1} // ชื่อหรือ URL รูปภาพของคุณ
+            alt="IT Department"
+            className="rounded-lg shadow-lg w-2/3 md:w-1/2"
+          />
+        </div>
+
+        {/* การ์ดข้อมูล */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">หลักสูตร</h2>

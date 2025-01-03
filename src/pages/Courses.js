@@ -9,6 +9,7 @@ function Courses() {
           เรานำเสนอหลักสูตรที่ครอบคลุมและทันสมัยในระดับ ปวช. และ ปวส. เพื่อพัฒนาความเชี่ยวชาญของนักศึกษาในสายอาชีพที่เลือก
         </p>
 
+        {/* การ์ดหลักสูตร */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* หลักสูตร ปวช. */}
           <div className="bg-white shadow-md rounded-lg p-6">
@@ -34,6 +35,28 @@ function Courses() {
               <li>การบริหารจัดการเครือข่าย</li>
               <li>การออกแบบฐานข้อมูล</li>
             </ul>
+          </div>
+        </div>
+
+        {/* การแสดง PDF */}
+        <div className="bg-white shadow-md rounded-lg p-6 mt-10">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">ไฟล์ PDF หลักสูตร</h2>
+          <div className="text-center">
+            {/* ใช้ embed สำหรับแสดง PDF */}
+            <embed
+              src="example.pdf" // ระบุ URL ไฟล์ PDF ของคุณที่นี่
+              type="application/pdf"
+              className="w-full h-96"
+            />
+          </div>
+          <div className="mt-4 text-center">
+            <a
+              href="example.pdf" // ลิงก์ไปยังไฟล์ PDF
+              download
+              className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+            >
+              ดาวน์โหลดไฟล์ PDF
+            </a>
           </div>
         </div>
       </div>
